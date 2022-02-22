@@ -145,7 +145,7 @@ updateText("(");
     }
     public void equaltoBTN(View view){
         String userExp=display.getText().toString();
-        userExp=userExp.replaceAll("&#0215;" ,"*");
+        userExp=userExp.replaceAll("x" ,"*");
         userExp=userExp.replaceAll("\u00F7" ,"/");
     Expression exp=new Expression(userExp);
     String result=String.valueOf(exp.calculate());
